@@ -2,40 +2,28 @@ pipeline {
     agent any
 
     stages {
-        stage('Preparation') {
+        stage('Print Greeting') {
             steps {
-                bat 'echo Preparing the build...'
+                bat 'echo Hello from Jenkins Pipeline on Windows!'
             }
         }
 
         stage('Build') {
             steps {
-                bat 'echo Building the application...'
-                // Add your actual build steps here, like compiling code or running scripts
+                bat 'echo Simulating build step...'
             }
         }
 
         stage('Test') {
             steps {
                 bat 'echo Running tests...'
-                // Add testing commands here
             }
         }
 
         stage('Deploy') {
             steps {
                 bat 'echo Deploying application...'
-                // Add deployment steps if any
             }
-        }
-    }
-
-    post {
-        success {
-            bat 'echo Pipeline completed successfully.'
-        }
-        failure {
-            bat 'echo Pipeline failed. Check the logs for details.'
         }
     }
 }
