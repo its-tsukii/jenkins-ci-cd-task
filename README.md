@@ -95,33 +95,28 @@ pipeline {
 }
 ```
 ✅ Pipeline Success
-A successful pipeline run from the Jenkins dashboard:
-
-
-Console Output:
+<br>A successful pipeline run from the Jenkins dashboard:
 
 
 📚 How to Run Locally
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/jenkins-ci-cd-task
-cd jenkins-pipeline-task
-start index.html
-Make sure port 8081 is available if you're using a local server.
+<br>IN BASH :
+<br>git clone https://github.com/yourusername/jenkins-ci-cd-task
+<br>cd jenkins-pipeline-task
+<br>start index.html
+<br>Make sure port 8081 is available if you're using a local server.
 
 🔨 Tools & Tech Used
-Jenkins
+<br>Jenkins
 
-GitHub
+<br>GitHub
 
-HTML
+<br>HTML
 
-Git (CLI)
+<br>Git (CLI)
 
-Windows OS
+<br>Windows OS
 
-🌐 Author
+<br>🌐 Author
 <br>Aayush Kukade
 <br>GitHub • Medium
 <br>https://medium.com/@sroy10012001
