@@ -2,40 +2,23 @@ pipeline {
     agent any
 
     stages {
-        stage('Print Greeting') {
+        stage('Preparation') {
             steps {
-                bat 'echo Hello from Jenkins Pipeline on Windows!'
-            }
-        }
-        
-        stage('Build') {
-            steps {
-                bat 'echo Simulating build step...'
-                // For example: bat 'docker build -t my-app .'
+                bat 'echo Preparing workspace...'
             }
         }
 
-        stage('Test') {
+        stage('Build') {
             steps {
-                bat 'echo Running tests...'
-                // Add any test commands if applicable
+                bat 'echo Build step - Static HTML, nothing to compile.'
             }
         }
 
         stage('Deploy') {
             steps {
-                bat 'echo Deploying application...'
-                // For example: bat 'docker run -d -p 8081:80 --name my-app my-app'
+                bat 'echo Starting server on http://localhost:8081'
+                bat 'start /min cmd /c "python -m http.server 8081 --directory app"'
             }
-        }
-    }
-    
-    post {
-        success {
-            bat 'echo Pipeline completed successfully!'
-        }
-        failure {
-            bat 'echo Pipeline failed. Check the logs for details.'
         }
     }
 }
