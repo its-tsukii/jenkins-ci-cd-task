@@ -1,49 +1,100 @@
-# Jenkins CI/CD Task 1 – Internship Project 🚀
+# 🚀 Jenkins CI/CD Pipeline – Internship Task 1
 
-This repository contains my submission for Task 1 of the Uptoskills Cloud Computing Internship. It demonstrates a working Jenkins pipeline setup that builds and deploys a simple web application.
-
-## ✅ Task Summary
-
-- Installed Jenkins locally.
-- Created a Jenkinsfile to automate build and deploy.
-- Configured Jenkins to pull from this GitHub repository.
-- Triggered the pipeline using `git push`.
-- Served a basic HTML page on `http://localhost:8081`.
-
-## 🏗️ Tech Stack
-
-- Jenkins
-- GitHub
-- HTML
-- Windows (localhost)
-
-## 📂 Folder Structure
-
-jenkins-pipeline-task/
-<br>├── app/
-<br>    └── index.html
-<br>├── Dockerfile 
-<br>├── LICENSE
-<br>├── Jenkinsfile 
-<br>├── Readme.md
-<br>└── index.html
-
-## 🔧 How it works
-
-- Jenkins pulls code from GitHub.
-- Builds the project (static HTML in this case).
-- Deploys it by copying to a folder and serving via Python HTTP server on port 8081.
-
-## 📸 Screenshots
-
-<!-- Add your screenshots here -->
-
-## 📖 Blog
-
-Check out the full story on [Medium](#) (link coming soon).
+This project showcases a basic CI/CD pipeline setup using Jenkins and GitHub to build and deploy a simple HTML application. It is part of the **Uptoskills Cloud Internship** program.
 
 ---
 
-### 📄 License
+## 📌 Task Objective
 
-This project is licensed under MIT.
+> Create a Jenkins pipeline that builds and deploys an application automatically when code is pushed to GitHub.
+
+---
+
+## 📁 Project Structure
+
+jenkins-pipeline-task/ 
+│ ├── Jenkinsfile 
+│ ├── index.html 
+├── app/ 
+├── index.html 
+├── Dockerfile 
+├── Readme.md
+├── LICENSE
+└── screenshots/ 
+│ ├── app-running.png 
+│ ├── jenkins-config.png 
+│ ├── pipeline-success.png 
+│ ├── console-output.png
+
+
+
+---
+
+## 🖥️ App Running on Localhost
+
+> This is the final deployed app running on `http://localhost:8081`.
+
+![App Running](screenshots/app-running.png)
+
+---
+
+## 🔧 Jenkins Job Configuration
+
+> GitHub integration and Script Path settings.
+
+![Jenkins Config](screenshots/jenkins-config.png)
+
+---
+
+## ⚙️ Jenkinsfile Pipeline
+
+A simple declarative Jenkins pipeline:
+```
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                bat 'echo Building the app...'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                bat 'start index.html'
+            }
+        }
+    }
+}
+```
+✅ Pipeline Success
+A successful pipeline run from the Jenkins dashboard:
+
+
+Console Output:
+
+
+📚 How to Run Locally
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/jenkins-ci-cd-task
+cd jenkins-pipeline-task
+start index.html
+Make sure port 8081 is available if you're using a local server.
+
+🔨 Tools & Tech Used
+Jenkins
+
+GitHub
+
+HTML
+
+Git (CLI)
+
+Windows OS
+
+🌐 Author
+Aayush Kukade
+GitHub • Medium
