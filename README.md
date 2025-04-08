@@ -19,3 +19,26 @@ This repository contains my submission for Task 1 of the Uptoskills Cloud Comput
 
 ## 📂 Folder Structure
 
+jenkins-pipeline-task/ 
+<br>├── Jenkinsfile 
+<br>└── index.html
+
+## 🔧 How it works
+
+- Jenkins pulls code from GitHub.
+- Builds the project (static HTML in this case).
+- Deploys it by copying to a folder and serving via Python HTTP server on port 8081.
+
+## 📸 Screenshots
+
+<!-- Add your screenshots here -->
+
+## 📖 Blog
+
+Check out the full story on [Medium](#) (link coming soon).
+
+---
+
+### 📄 License
+
+This project is licensed under MIT.
