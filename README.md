@@ -19,8 +19,13 @@ This repository contains my submission for Task 1 of the Uptoskills Cloud Comput
 
 ## 📂 Folder Structure
 
-jenkins-pipeline-task/ 
+jenkins-pipeline-task/
+<br>├── app/
+<br>    └── index.html
+<br>├── Dockerfile 
+<br>├── LICENSE
 <br>├── Jenkinsfile 
+<br>├── Readme.md
 <br>└── index.html
 
 ## 🔧 How it works
