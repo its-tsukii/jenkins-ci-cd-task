@@ -1,6 +1,6 @@
-# 🚀 Jenkins CI/CD Pipeline – Internship Task 1
+# 🚀 Jenkins CI/CD Pipeline
 
-This project showcases a basic CI/CD pipeline setup using Jenkins and GitHub to build and deploy a simple HTML application. It is part of the **Uptoskills Cloud Internship** program.
+This project showcases a basic CI/CD pipeline setup using Jenkins and GitHub to build and deploy a simple HTML application.
 
 ---
 
@@ -13,20 +13,18 @@ This project showcases a basic CI/CD pipeline setup using Jenkins and GitHub to 
 ## 📁 Project Structure
 
 jenkins-pipeline-task/ 
-│ ├── Jenkinsfile 
-│ ├── index.html 
-├── app/ 
-├── index.html 
-├── Dockerfile 
-├── Readme.md
-├── LICENSE
-└── screenshots/ 
-│ ├── app-running.png 
-│ ├── jenkins-config.png 
-│ ├── pipeline-success.png 
-│ ├── console-output.png
-
-
+<br>│ ├── Jenkinsfile 
+<br>│ ├── index.html 
+<br>├── app/ 
+<br>├── index.html 
+<br>├── Dockerfile 
+<br>├── Readme.md
+<br>├── LICENSE
+<br>└── screenshots/ 
+<br>│ ├── app-running.png 
+<br>│ ├── jenkins-config.png 
+<br>│ ├── pipeline-success.png 
+<br>│ ├── console-output.png
 
 ---
 
@@ -34,7 +32,35 @@ jenkins-pipeline-task/
 
 > This is the final deployed app running on `http://localhost:8081`.
 
-![App Running](screenshots/app-running.png)
+![App Running](screenshots/localhost.png)
+
+---
+## 🖥️ Jenkins Dashboard
+
+> This is the Dashboard for the Jenkins App on windows on `http://localhost:8080`.
+
+![App Running](screenshots/dashboard.png)
+
+---
+## 🖥️ Console_output of Jenkins
+
+> This is the Output.
+
+![App Running](screenshots/output_console.png)
+
+---
+## 🖥️ Jenkins Pipeline Status
+
+> This is the Pipeline Status for the Jenkins App on windows on `http://localhost:8080`.
+
+![App Running](screenshots/pipeline_status.png)
+
+---
+## 🖥️ Jenkins Status
+
+> This is the Status for the Jenkins App on windows on `http://localhost:8080`.
+
+![App Running](screenshots/status.png)
 
 ---
 
@@ -42,7 +68,7 @@ jenkins-pipeline-task/
 
 > GitHub integration and Script Path settings.
 
-![Jenkins Config](screenshots/jenkins-config.png)
+![Jenkins Config](screenshots/pipeline_scm.png)
 
 ---
 
