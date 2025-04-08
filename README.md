@@ -122,5 +122,6 @@ Git (CLI)
 Windows OS
 
 🌐 Author
-Aayush Kukade
-GitHub • Medium
+<br>Aayush Kukade
+<br>GitHub • Medium
+<br>https://medium.com/@sroy10012001
