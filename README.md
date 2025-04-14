@@ -107,16 +107,13 @@ pipeline {
 
 🔨 Tools & Tech Used
 <br>Jenkins
-
 <br>GitHub
-
 <br>HTML
-
 <br>Git (CLI)
-
 <br>Windows OS
 
 <br>🌐 Author
 <br>Aayush Kukade
 <br>GitHub • Medium
 <br>https://medium.com/@sroy10012001
+<br> This Repo Blog : https://medium.com/@sroy10012001/building-a-jenkins-based-ci-cd-pipeline-bbbce78911af
